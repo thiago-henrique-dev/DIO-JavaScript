@@ -23,3 +23,19 @@ console.log(executaOperação(5,3,multiplicação));
 //Executando a chamada de executaOperacao(1, 1, soma) 
 //vamos obter o valor igual a 2 ,executando a chamada 
 //executaOperacao(2, 2, multiplicacao) vamos obter o valor 4.
+
+
+imprimeSoma(4, 5);
+
+function imprimeSoma(a, b) {
+    console.log(soma(a, b));
+  }
+function soma(a, b) {
+    return a + b;
+  }
+
+//Se executarmos o código do Exemplo-3.1 vamos obter o valor 9 
+//impresso no console. Se repararmos, a chamada da função imprimeSoma 
+//é feita antes de sua criação e mesmo assim o código 
+//será executado sem erros.
+
