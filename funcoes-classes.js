@@ -7,9 +7,9 @@
         
     }
 }
-Livro.anunciar()*/
+Livro.anunciar()
 
-/*const Livro = function (nome, editora, páginas) {
+const Livro = function (nome, editora, páginas) {
     gNome = nome,
     gEditora = editora,
     gPaginas = páginas
@@ -52,6 +52,19 @@ Livro.anunciar()*/
                 NodeJS.anunciarTitulo()
                 NodeJS.descreverTitulo()
 
+                console.log(typeof Livro)
+
+                class LivroColeção extends Livro {
+                        constructor(nome, nomeColeção) {
+                        super(nome)
+                        this.nomeColeção = nomeColeção
+                        }
+                        descreverColeção(){
+                            console.log(`O Livro ${this.nome} faz parte da coleção ${this.nomeColeção}`)
+                        }
+                }
+                    const LogicaDeProgramação = new LivroColeção("Lógica de Programação", "Comece a Programar")
+                    LogicaDeProgramação.descreverColeção()
 
 
 
