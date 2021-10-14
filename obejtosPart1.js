@@ -71,3 +71,62 @@ var novoUsuario2 = {
 //var novoUsuario = Object.assign({},usuario4, extraInfo);
 //console.log(novoUsuario)
 console.log(novoUsuario2)
+
+var nomeVariavel = 'Estado';
+var nome = "LastName"
+
+var usuario5 = {
+    [nome]: "Thiago",
+    [nomeVariavel]: "São Paulo"
+}
+console.log(usuario5)
+
+// getter e setters
+
+var usuarios = [{
+    nome: "Thiago",
+    idade: 21
+},{
+    nome: "João",
+    idade: 19
+},{
+    nome: "Maria",
+    idade: 21
+}
+]
+
+var usuario = {
+    posição: 0,
+    get atual(){
+        return usuarios[this.posição];
+    },
+    set atual(posição) {
+        this.posição = posição;
+    },
+    proximo() {
+        ++this.posição;
+    },
+    anterior() {
+        --this.posição;
+    }
+
+}
+
+    console.log(usuario.atual);
+    usuario.proximo();
+
+    console.log(usuario.atual);
+    usuario.proximo();
+
+    console.log(usuario.atual);
+    usuario.proximo();
+
+    usuario.atual = 0
+    console.log(usuario.atual);
+    usuario.atual = 2
+    console.log(usuario.atual);
+
+
+
+
+
