@@ -82,6 +82,48 @@ const Livro = function (nome, editora, páginas) {
 
                         let gabriela = new Pessoa ('Gabriela', 'Ribeiro')
 
+                        class Professor {
+                            constructor(nome, sobrenome, curso){
+                                this.nome = nome,
+                                this.sobrenome = sobrenome,
+                                this.curso = curso
+                            }
+                            saudação(){
+                                console.log("Bom dia " + this.nome +" " + this.sobrenome)
+                            }
+                        }
+                        
+                        let joao = new Professor('João', 'Souza', 'Lógica de programação')
+                        joao.saudação() //Bom dia João Souza
+
+                        class Curso {
+                            constructor(materia, professor, duracao){
+                                this.materia = materia,
+                                this.professor = professor,
+                                this.duracao = duracao
+                            }
+                            get prof() {
+                                return this.professor
+                            }
+                        }
+                        
+                        let poo = new Curso('Programação orientada a objetos', 'Rafaella', '1 semestre')
+                        console.log(poo.prof) //Rafaella
+
+                        class Boletim {
+                            constructor(participacao, prova, trabalho){
+                                this.participacao = participacao,
+                                this.prova = prova,
+                                this.trabalho = trabalho
+                            }
+                            get media() {
+                                return parseInt((this.participacao + this.prova + this.trabalho) / 3)
+                            }
+                        }
+                        
+                        let boletimSemestral = new Boletim(8, 6, 7.5)
+                        console.log(boletimSemestral.media) //7
+
 
 
 
