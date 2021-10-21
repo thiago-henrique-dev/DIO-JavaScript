@@ -7,7 +7,7 @@ function dobro(num) {
 const resultado = numeros.map(dobro)
 console.log(resultado)*/
 
-/*onst produtos = [
+/*const produtos = [
     { nome: "", preco: 23.67, desconto: 0.2},
     { nome: "", preco: 120.89, desconto: 0.3},
     { nome: "", preco: 3567.67, desconto: 0.5},
